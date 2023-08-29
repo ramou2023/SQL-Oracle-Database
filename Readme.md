@@ -9,7 +9,7 @@ Ce projet à pour objectif l'initialisation à la creation des bases de données
 ##Partie 2 :  Creation de la base de données
 Avant de manipuler les bases de données SQL, il faut creer ces bases données en definisant un modele de données. Pour creer les bases de données nous utilisons les requetes DDL à savoir CREATE, UPDATE, ALTER, INSERT,...
 
-Exemple de creation d'une base de données SQL:
+Exemple de creation d'une base de données SQL: 
 
 ```
 CREATE TABLE locationsBis
@@ -56,8 +56,9 @@ CREATE SEQUENCE departmentsBis_seq
    NOCACHE
    NOCYCLE;
 ```
-La base de données creée aura cette forme:\n
+La base de données creée avec deux tables  aura cette forme:
 
 ![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/6e14deeb-b2d7-435b-bfe1-8fecb739326b)
 
+Pour creer la base de données avec l'ensemble des tables , il suffit d'aller executer le fichier `DDL.sql` se trouvant dans le dossier `Source/DDL/`
 
