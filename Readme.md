@@ -1,6 +1,6 @@
 Ce projet à pour objectif l'initialisation à la creation des bases de données et la prise en main des requetes SQL En Utilisantb ORACLE.
 
-##Partie 1 : Installation d'ORACLE
+** Partie 1 : Installation d'ORACLE
 
  1. Telecharger  d'abord l'édition 21c d'Oracle Database(SQL PLus) sur le site officiel d'Oracle
  2. Definir uun mot de passe  pour le nom d'utilisateur "SYSTEM" lors de l'installation du logiciel Oracle Database
