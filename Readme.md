@@ -11,7 +11,7 @@ Avant de manipuler les bases de données SQL, il faut creer ces bases données e
 
 Exemple de creation d'une base de données SQL:
 
-'''
+```
 CREATE TABLE locationsBis
   (locationb_id NUMBER(4),
   street_adressb VARCHAR2(40),
@@ -55,5 +55,5 @@ CREATE SEQUENCE departmentsBis_seq
    MAXVALUE 9990
    NOCACHE
    NOCYCLE;
-'''
+```
 
