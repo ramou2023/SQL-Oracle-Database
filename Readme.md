@@ -1,12 +1,59 @@
-L'agenda du projet consiste à analyser les données à l'aide de SQL sur le logiciel de base de données Oracle. Nous
-téléchargeons d'abord l'édition 21c d'Oracle Database sur le site officiel d'Oracle et comprenons le
-problème. Ensuite, un mot de passe est défini pour le nom d'utilisateur "SYSTEM" lors de l'installation du logiciel Oracle Database
-21c. Ensuite, SQL Plus est utilisé pour se connecter à la base de données Oracle en utilisant les mêmes informations d'identification de la base de données Oracle 21c.
-Oracle Database 21c. En outre, une connexion à la base de données est établie entre SQL Developer et la base de données Oracle en utilisant le nom d'utilisateur "SYSTEM" et le mot de passe.
-le nom d'utilisateur "SYSTEM" et le mot de passe. Des tables sont ensuite créées dans la base de données, suivies de l'insertion de données dans les tables et de l'exploration.
-l'insertion de données dans les tables et l'exploration, c'est-à-dire l'observation des relations entre les tables, l'exploration des colonnes et l'observation des commentaires.
-les colonnes et les commentaires. Les enregistrements sont affichés de manière ordonnée, les valeurs NULL sont gérées et les enregistrements sont sélectionnés sur la base de motifs tels que les caractères génériques, les opérateurs, etc. Travailler ensuite sur les commandes de manipulation de données (DML).
-Manipulation des données (DML) pour l'analyse des données. Sauvegarde de la table où la migration est en cours et utilisation de COMMIT et ROL.
-et utiliser les commandes COMMIT et ROLLBACK. Ensuite, énumérer les enregistrements distincts, renommer
-renommer les colonnes, et enfin, lister les détails de l'employé sur la base des conditions
-complexes.
+Ce projet à pour objectif l'initialisation à la creation des bases de données et la prise en main des requetes SQL En Utilisantb ORACLE.
+
+**Partie 1** : **Installation d'ORACLE**
+ 1. Telecharger  d'abord l'édition 21c d'Oracle Database(SQL PLus) sur le site officiel d'Oracle
+ 2. Definir uun mot de passe  pour le nom d'utilisateur "SYSTEM" lors de l'installation du logiciel Oracle Database
+ 3. Telecharger  ORACLE SQL Developer puis etablir une connection avec a=la base de données en utilisant l'utilisateur SYSTEM et le mot de passe precedement defini.
+
+
+**Partie 2** :  **Creation de la base de données**
+Avant de manipuler les bases de données SQL, il faut creer ces bases données en definisant un modele de données. Pour creer les bases de données nous utilisons les requetes DDL à savoir CREATE, UPDATE, ALTER, INSERT,...
+
+Exemple de creation d'une base de données SQL:
+
+'''
+CREATE TABLE locationsBis
+  (locationb_id NUMBER(4),
+  street_adressb VARCHAR2(40),
+  postal_codeb VARCHAR2(12),
+  cityb VARCHAR2(30) CONSTRAINT loc_city_nnb NOT NULL
+  );
+  
+CREATE UNIQUE INDEX loc_id_pkb
+    ON locationsBis(locationb_id);
+    
+ALTER TABLE locationsBis
+  ADD (
+     CONSTRAINT loc_id_pkb 
+     PRIMARY KEY (locationb_id)
+  );
+CREATE SEQUENCE locationsBis_seq
+   START WITH 3300
+   INCREMENT BY 100
+   MAXVALUE 9900
+   NOCACHE
+   NOCYCLE;
+Create table departmentsBis
+     (departmentb_id NUMBER(4),
+     departmentb_name VARCHAR2(30) CONSTRAINT dept_name_nnb not NULL,
+     managerb_id NUMBER(6),
+     locationb_id NUMBER(4)
+     );
+Create unique index dept_id_pkb
+    ON departmentsBis (departmentb_id);
+
+ALTER TABLE departmentsBis
+    ADD ( 
+        CONSTRAINT dept_id_pkb PRIMARY KEY (departmentb_id),
+        CONSTRAINT dept_loc_fkb FOREIGN KEY (locationb_id) 
+                  REFERENCES locationsBis(locationb_id)
+    );
+    
+CREATE SEQUENCE departmentsBis_seq
+   START WITH 280
+   INCREMENT BY 10
+   MAXVALUE 9990
+   NOCACHE
+   NOCYCLE;
+'''
+
