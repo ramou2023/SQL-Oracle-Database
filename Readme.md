@@ -94,5 +94,46 @@ Pour creer la base de données avec **l'ensemble des tables** , il suffit d'alle
 
 **Partie 3 :  Data Manipulation Language (DML)**
 
-* Commande basique
+### Commandes basiques
+
+##### selectionner les données
+```
+select * from departments;
+select * from jobs;
+select * from locations;
+```
+##### ordeonner les données selectionner
+```
+select first_name|| ' '||last_name
+from employees
+order by first_name, last_name;
+```
+##### appliquer des filtres : selectioonner les employer dont l'id commenace par "AD"
+```
+select FIRST_NAME, LAST_NAME, EMAIL, JOB_ID
+from employees
+where job_id LIKE 'AD%';
+```
+
+##### Rêquete avec plusieurs conditions 
+
+1.1. job id commençant par AD et salaire >10000
+1.2 OU  job id commençant par  IT and salaire <= 6000
+2.2 COMMISSION_PCT doit être  0
+3.1 hire date doit être après le  1-JAN-1990
+```
+SELECT * 
+FROM EMPLOYEES
+WHERE (
+(JOB_ID LIKE 'AD%' AND SALARY > 10000)
+OR (JOB_ID LIKE 'IT%' AND SALARY <= 10000)
+)
+OR (
+DEPARTMENT_ID IN (90, 60, 30)
+AND COMMISSION_PCT = 0
+)
+AND HIRE_DATE > TO_DATE('1-JAN-2000', 'dd-MON-yyyy');
+```
+![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/0665d219-5615-4499-b02f-922b9f87b8f7)
+
 
