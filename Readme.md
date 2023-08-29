@@ -1,6 +1,6 @@
 Ce projet à pour objectif l'initialisation à la creation des bases de données et la prise en main des requetes SQL En Utilisantb ORACLE.
 
-**Partie 1** : **Installation d'ORACLE**
+##Partie 1 : Installation d'ORACLE
  1. Telecharger  d'abord l'édition 21c d'Oracle Database(SQL PLus) sur le site officiel d'Oracle
  2. Definir uun mot de passe  pour le nom d'utilisateur "SYSTEM" lors de l'installation du logiciel Oracle Database
  3. Telecharger  ORACLE SQL Developer puis etablir une connection avec a=la base de données en utilisant l'utilisateur SYSTEM et le mot de passe precedement defini.
@@ -56,7 +56,8 @@ CREATE SEQUENCE departmentsBis_seq
    NOCACHE
    NOCYCLE;
 ```
-La base de données creée aura cette forme:
+La base de données creée aura cette forme:\n
+
 ![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/6e14deeb-b2d7-435b-bfe1-8fecb739326b)
 
 
