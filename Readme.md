@@ -150,3 +150,5 @@ COMMIT;
 ```
 Si on excute pas la commande `commit;`, nous pouvons perdre les modifications quand on fera un rollback `ROLLBACK`;
 
+NB : Vous trouverer des commandes DML dans le dossier `Source/DML` : **Data_Analysis_Part_1.sql** et **Data_Analysis_Part_2.sql**
+
