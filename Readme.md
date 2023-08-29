@@ -94,7 +94,7 @@ Pour creer la base de données avec **l'ensemble des tables** , il suffit d'alle
 
 **Partie 3 :  Data Manipulation Language (DML)**
 
-### Commandes basiques
+#### Commandes basiques
 
 ##### selectionner les données
 ```
