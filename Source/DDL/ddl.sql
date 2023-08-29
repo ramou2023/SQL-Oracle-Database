@@ -1,0 +1,1 @@
+slecte * from employees;
