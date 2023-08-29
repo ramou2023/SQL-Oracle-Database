@@ -62,5 +62,5 @@ La base de données creée avec deux tables  aura cette forme:
 
 ![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/6e14deeb-b2d7-435b-bfe1-8fecb739326b)
 
-Pour creer la base de données avec l'ensemble des tables , il suffit d'aller executer le fichier `DDL.sql` se trouvant dans le dossier `Source/DDL/`
+Pour creer la base de données avec **l'ensemble des tables** , il suffit d'aller executer le fichier `DDL.sql` se trouvant dans le dossier `Source/DDL/`
 
