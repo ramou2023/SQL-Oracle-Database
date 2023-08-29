@@ -56,4 +56,7 @@ CREATE SEQUENCE departmentsBis_seq
    NOCACHE
    NOCYCLE;
 ```
+La base de données creée aura cette forme:
+![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/6e14deeb-b2d7-435b-bfe1-8fecb739326b)
+
 
