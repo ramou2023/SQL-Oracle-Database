@@ -102,7 +102,7 @@ select * from departments;
 select * from jobs;
 select * from locations;
 ```
-##### ordeonner les données selectionner
+##### ordonner les données après selection
 ```
 select first_name|| ' '||last_name
 from employees
@@ -136,4 +136,17 @@ AND HIRE_DATE > TO_DATE('1-JAN-2000', 'dd-MON-yyyy');
 ```
 ![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/0665d219-5615-4499-b02f-922b9f87b8f7)
 
+##### Commande pour modifier un element dans une table
+```
+UPDATE EMPLOYEES
+set EMAIL = 'rd@gmail.com'
+WHERE EMPLOYEE_ID=100;
+```
+![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/c053233a-a44b-468b-ac0b-cdf6f2a3c47c)
+
+Après une modification, il faut excuter la commande suivante pour que la modification soit prise en compte:
+```
+COMMIT;
+```
+Si on excute pas la commande `commit;`, nous pouvons perdre les modifications quand on fera un rollback `ROLLBACK`;
 
