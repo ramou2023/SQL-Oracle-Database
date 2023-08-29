@@ -57,6 +57,34 @@ CREATE SEQUENCE departmentsBis_seq
    MAXVALUE 9990
    NOCACHE
    NOCYCLE;
+-- INSERTION DES DONNEES 
+INSERT INTO locationsBis VALUES 
+   ( 1000 
+   , '1297 Via Cola di Rie'
+   , '00989'
+   , 'Roma'
+   );
+INSERT INTO locationsBis VALUES 
+   ( 2400 
+   , '93091 Calle della Testa'
+   , '10934'
+   , 'Venice'
+   );
+   
+INSERT INTO departmentsBis VALUES 
+   ( 30
+   , 'Purchasing'
+   , 114
+   , 1000
+   );
+   
+   INSERT INTO departmentsBis VALUES 
+   ( 40
+   , 'Human Resources'
+   , 203
+   , 2400
+   );
+
 ```
 La base de données creée avec deux tables  aura cette forme:
 
