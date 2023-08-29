@@ -144,7 +144,7 @@ WHERE EMPLOYEE_ID=100;
 ```
 ![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/c053233a-a44b-468b-ac0b-cdf6f2a3c47c)
 
-Après une modification, il faut excuter la commande suivante pour que la modification soit prise en compte:
+Après une modification, il faut executer la **commande suivante** pour que la modification soit prise en compte:
 ```
 COMMIT;
 ```
