@@ -4,7 +4,7 @@ Ce projet à pour objectif la creation des bases de données et la manipulation 
 
  1. Telecharger  d'abord l'édition 21c d'Oracle Database(SQL PLus) sur le site officiel d'Oracle
  2. Definir uun mot de passe  pour le nom d'utilisateur `SYSTEM` lors de l'installation du logiciel Oracle Database
- 3. Telecharger  ORACLE SQL Developer puis etablir une connection avec à la base de données en utilisant le nom d'utilisateur `SYSTEM` et le mot de passe precedement defini.
+ 3. Telecharger  ORACLE SQL Developer puis etablir une connection avec la base de données en utilisant le nom d'utilisateur `SYSTEM` et le mot de passe precedement defini.
 
 
 **Partie 2 :  Creation de la base de données**
