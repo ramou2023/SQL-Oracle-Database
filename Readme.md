@@ -96,19 +96,19 @@ Pour creer la base de données avec **l'ensemble des tables** , il suffit d'alle
 
 #### Commandes basiques
 
-##### selectionner les données
+##### Selectionner les données
 ```
 select * from departments;
 select * from jobs;
 select * from locations;
 ```
-##### ordonner les données après selection
+##### Ordonner les données après selection
 ```
 select first_name|| ' '||last_name
 from employees
 order by first_name, last_name;
 ```
-##### appliquer des filtres : selectioonner les employer dont l'id commenace par "AD"
+##### Appliquer des filtres : selectioonner les employer dont l'id commenace par "AD"
 ```
 select FIRST_NAME, LAST_NAME, EMAIL, JOB_ID
 from employees
