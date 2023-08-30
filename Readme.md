@@ -1,17 +1,16 @@
-Ce projet à pour objectif la creation des bases de données et la manipulation des requetes SQL en utilisant ORACLE.
+Cet projet a pour objectif la création des bases de données et la manipulation des requêtes SQL en utilisant ORACLE.
 
 **Partie 1 : Installation d'ORACLE**
 
  1. Telecharger  d'abord l'édition 21c d'Oracle Database(SQL Plus) sur le site officiel d'Oracle
- 2. Definir uun mot de passe  pour le nom d'utilisateur `SYSTEM` lors de l'installation du logiciel Oracle Database
- 3. Telecharger  ORACLE SQL Developer puis etablir une connection avec la base de données en utilisant le nom d'utilisateur `SYSTEM` et le mot de passe precedement defini.
+ 2. Definir un mot de passe  pour le nom d'utilisateur `SYSTEM` lors de l'installation du logiciel Oracle Database
+ 3. Telecharger  ORACLE SQL Developer puis etablir une connection avec la base de données en utilisant le nom d'utilisateur `SYSTEM` et le mot de passe précedement defini.
 
 
 **Partie 2 :  Creation de la base de données**
+Avant de travailler avec les bases de données SQL, il est essentiel de créer ces bases de données en établissant un modèle de données. Pour réaliser cette création, nous utilisons les **requêtes DDL** telles que `CREATE`, `UPDATE`, `ALTER`, `INSERT`, etc.
 
-Avant de manipuler les bases de données SQL, il faut creer ces bases données en definisant un modele de données. Pour creer les bases de données nous utilisons les requetes DDL à savoir CREATE, UPDATE, ALTER, INSERT,...
-
-Exemple de creation d'une base de données SQL: 
+Voici un exemple concret de création d'une base de données SQL :
 
 ```
 CREATE TABLE locationsBis
@@ -86,11 +85,11 @@ INSERT INTO departmentsBis VALUES
    );
 
 ```
-La base de données creée avec deux tables  aura cette forme:
+La base de données établie, comprenant deux tables, aura la structure suivante :
 
 ![image](https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/6e14deeb-b2d7-435b-bfe1-8fecb739326b)
 
-Pour creer la base de données avec **l'ensemble des tables** , il suffit d'aller executer le fichier `ddl.sql` se trouvant dans le dossier `Source/DDL/`
+Afin de mettre en place la base de données incluant **toutes les tables**, il vous suffit d'exécuter le fichier  `ddl.sql` qui se situe dans le répertoire `Source/DDL/`.
 
 <img width="263" alt="image" src="https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/a93e6315-4ffb-457b-a031-d5794b4df13e">
 
