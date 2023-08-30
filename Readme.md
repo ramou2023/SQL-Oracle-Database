@@ -121,10 +121,11 @@ where job_id LIKE 'AD%';
 
 ##### Rêquete avec plusieurs conditions 
 
-1.1. job id commençant par AD et salaire >10000
-1.2 OU  job id commençant par  IT and salaire <= 6000
-2.2 COMMISSION_PCT doit être  0
-3.1 hire date doit être après le  1-JAN-1990
+Conditions :
+- job id commençant par AD et salaire >10000
+- OU  job id commençant par  IT and salaire <= 6000
+- COMMISSION_PCT doit être  0
+- Hire Date doit être après le  1-JAN-1990
 ```
 SELECT * 
 FROM EMPLOYEES
