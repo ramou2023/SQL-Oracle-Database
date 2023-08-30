@@ -98,7 +98,7 @@ Pour creer la base de données avec **l'ensemble des tables** , il suffit d'alle
 
 **Partie 3 :  Data Manipulation Language (DML)**
 
-#### Commandes basiques
+#### 3.1 :  Commandes basiques
 
 ##### Selectionner les données
 ```
@@ -158,4 +158,4 @@ Si on excute pas la commande `commit;`, nous pouvons perdre les modifications qu
 
 NB : Vous trouverer des commandes DML dans le dossier `Source/DML` : **Data_Analysis_Part_1.sql** et **Data_Analysis_Part_2.sql**
 
-### SQL Joins
+#### 3.2 : SQL Joins
