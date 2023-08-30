@@ -1,4 +1,4 @@
-Ce projet à pour objectif l'initialisation à la creation des bases de données et la prise en main des requetes SQL En Utilisantb ORACLE.
+Ce projet à pour objectif la creation des bases de données et la manipulation des requetes SQL en utilisant ORACLE.
 
 **Partie 1 : Installation d'ORACLE**
 
