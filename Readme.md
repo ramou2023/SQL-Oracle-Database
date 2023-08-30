@@ -92,6 +92,10 @@ La base de données creée avec deux tables  aura cette forme:
 
 Pour creer la base de données avec **l'ensemble des tables** , il suffit d'aller executer le fichier `ddl.sql` se trouvant dans le dossier `Source/DDL/`
 
+<img width="263" alt="image" src="https://github.com/ramou2023/SQL-Oracle-Database/assets/140972803/a93e6315-4ffb-457b-a031-d5794b4df13e">
+
+
+
 **Partie 3 :  Data Manipulation Language (DML)**
 
 #### Commandes basiques
