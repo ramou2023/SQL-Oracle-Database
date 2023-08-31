@@ -111,7 +111,7 @@ select first_name|| ' '||last_name
 from employees
 order by first_name, last_name;
 ```
-##### Appliquer des filtres : selectioonner les employer dont l'id commenace par "AD"
+##### Appliquer des filtres : selectionner les employés dont l'id commence par "AD"
 ```
 select FIRST_NAME, LAST_NAME, EMAIL, JOB_ID
 from employees
